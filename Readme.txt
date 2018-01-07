@@ -1,3 +1,22 @@
+/*
+	This lib is modified from http://code.rancidbacon.com/ProjectLogArduinoUSB
+	-I changed and added few lines in UsbKeyboard.h. to make simutaneous 
+	 keys down(n keys rollover) can truely worked.
+	-issuse already know:
+		-only works with Arduino IDE 1.0.6 or lower version.
+		-after the sketch is uploaded to the board, you have to remove 
+		 all the usb connection(either the one for UART uploading or the one for HID keyboard)
+		 from the board.
+		-If there is other usb devices at the same usb hub with arduinoHIDKeyboard, all 
+		 usb devices will be disabled as unrecognized usb devices temporary, including arduinoHIDKeyboard.
+		-not working with UART simutaneously.
+		-not working if this lib folder is not in user\Documents\Arduino\libraries\
+		 but in somewhere with sketch file(.ino) instead.
+		+feel free to contact me if you have any opinion or question
+  	 :quency89513@gmail.com (either english or chinese)
+		 last update 01/07/2018 by qqq89513.
+ */
+
 This is the Readme file to Objective Development's firmware-only USB driver
 for Atmel AVR microcontrollers. For more information please visit
 http://www.obdev.at/vusb/
